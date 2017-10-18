@@ -1,2 +1,35 @@
+.navbar {
+  padding-top: 20px;
+  background-color: white;
+  padding-bottom: 20px;
+}
+
+.brooke-nav-items li a {
+  color: #9f9f9f !important;
+}
+
+.header-text-black {
+  display: block;
+  line-height: 100vh;
+  text-align: center;
+  color: black;
+  font-weight: 600 !important;
+  font-size: 60px !important;
+}
+
+.header-text-black span {
+  color: red;
+}
+
+.header-text-black .text-container {
+  width: 60%;
+}
+
+.header-text-black .text-container .section-header {
+  display: block;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=brooke.css.map */

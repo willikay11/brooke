@@ -161,6 +161,22 @@ gulp.task('ckeditor', function () {
 
 });
 
+gulp.task('scss-frontend', function () {
+
+    return gulp.src('resources/assets/sass/brooke.scss')
+        .pipe(sass())
+        .on('error', swallowError)
+        .pipe(prefix({
+            browsers: ['> 1%', 'IE > 8'],
+            cascade: false
+        }))
+        .pipe(minifyCSS())
+        .pipe(rename('brooke.css'))
+        .pipe(gulp.dest('public/assets/css'))
+        .pipe(livereload());
+
+});
+
 gulp.task('js-admin', function () {
 
     var destDir = 'public/js/admin',
@@ -243,17 +259,19 @@ gulp.task('all', [
     'angular-locales',
     'fancybox-img',
     'ckeditor',
+    'scss-frontend',
     'watch'
 ]);
 
 gulp.task('default', [
     'less-public',
     'js-public',
-    'watch'
+    'watch',
+    'scss-frontend'
 ]);
 
 elixir(function(mix) {
     mix.sass('brooke.scss', 'public/assets/css/brooke.css')
         .webpack('app.js', 'public/assets/js/')
-        .version(['public/assets/css/brooke.css', 'public/assets/js/app.js']);
+        // .version(['public/assets/css/brooke.css', 'public/assets/js/app.js']);
 });

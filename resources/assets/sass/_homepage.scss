@@ -1,0 +1,22 @@
+.header-text-black{
+  display: block;
+  line-height: 100vh;
+  text-align: center;
+  color: black;
+  font-weight: 600 !important;
+  font-size: 60px !important;
+  span{
+    color: red;
+  }
+
+
+  .text-container{
+    width: 60%;
+    .section-header{
+      display: block;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+}
