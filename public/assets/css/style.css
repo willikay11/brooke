@@ -50,10 +50,11 @@ Main Components
 .cd-section {
   height: 100vh;
 }
-.cd-section {
-  line-height: 100vh;
-  text-align: center;
-  font-size: 2.4rem;
+.cd-section .content-container{
+  height: 100vh;
+  /*line-height: 100vh;*/
+  /*text-align: center;*/
+  /*font-size: 2.4rem;*/
 }
 .cd-section:first-of-type > div {
   background-color: #ffffff;
@@ -81,7 +82,7 @@ Main Components
   background-color: #fcb052;
 }
 .cd-section:nth-of-type(5) > div {
-  background-color: #f06a59;
+  background-color: white;
 }
 [data-animation="parallax"] .cd-section > div, [data-animation="fixed"] .cd-section > div, [data-animation="opacity"] .cd-section > div {
   background-position: center center;
@@ -101,7 +102,7 @@ Main Components
   background-image: url("../../img/img-4.jpg");
 }
 [data-animation="parallax"] .cd-section:nth-of-type(5) > div, [data-animation="fixed"] .cd-section:nth-of-type(5) > div, [data-animation="opacity"] .cd-section:nth-of-type(5) > div {
-  background-image: url("../../img/img-5.jpg");
+  /*background-image: url("../../img/img-5.jpg");*/
 }
 @media only screen and (min-width: 1050px) {
   .cd-section h2 {

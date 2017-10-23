@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="assets/css/reset.css"> <!-- CSS reset -->
     <link rel="stylesheet" href="assets/css/style.css"> <!-- Resource style -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,55 +21,13 @@
 </head>
 
 <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
-<body data-hijacking="off" data-animation="fixed">
+<body data-hijacking="off" data-animation="parallax">
 
     @include('frontend.layouts.partials.menu')
 
-<section class="cd-section visible">
-    <div>
-        <span class="header-text-black">Real Estate <span>consulting</span> is our sport.</span>
-    </div>
-</section>
+    @yield('content')
 
-<section class="cd-section">
-    <div>
-        <div class="col-lg-6 col-sm-12">
-            <div class="text-container">
-                <span class="section-header">Site acquisition and evaluation</span>
-                <p></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="cd-section">
-    <div>
-        <div class="col-lg-offset-6 col-lg-6 col-sm-12">
-            <h2>Section 3</h2>
-        </div>
-    </div>
-</section>
-
-<section class="cd-section">
-    <div>
-        <div class="col-lg-6 col-sm-12">
-            <h2>Section 4</h2>
-        </div>
-    </div>
-</section>
-
-<section class="cd-section">
-    <div>
-        <h2>Section 5</h2>
-    </div>
-</section>
-
-<nav>
-    <ul class="cd-vertical-nav">
-        <li><a href="#0" class="cd-prev inactive">Next</a></li>
-        <li><a href="#0" class="cd-next">Prev</a></li>
-    </ul>
-</nav> <!-- .cd-vertical-nav -->
+    @include('frontend.layouts.partials.footer')
 
 <script src="/js/parallax/jquery-2.1.4.js"></script>
 <script src="/js/parallax/velocity.min.js"></script>

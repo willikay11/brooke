@@ -8,15 +8,119 @@
   span{
     color: red;
   }
+}
 
+.text-container{
+  //width: 70%;
+  margin-top: 60%;
 
-  .text-container{
-    width: 60%;
-    .section-header{
-      display: block;
-      color: white;
-      font-size: 40px;
-      font-weight: bold;
-    }
+  .section-header{
+    display: block;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
   }
+
+  .section-text{
+    display: block;
+    word-spacing: 2.5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 24px;
+  }
+
+  .section-button{
+    background-color: transparent;
+    border: solid 3px white;
+    border-radius: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+  }
+
+}
+
+.blogs-container{
+  margin-top: 40px;
+  margin-bottom: 30px;
+
+  .blogs-header{
+    display: block;
+    color: black;
+    text-align: center;
+  }
+
+  .blogs-subheader{
+    display: block;
+    color: $menu-grey;
+    text-align: center;
+    word-spacing: 5px;
+    letter-spacing: 4px;
+    margin-top: 15px;
+    font-size: 20px;
+  }
+}
+
+.section-image{
+  height: 400px;
+  width: 500px;
+}
+
+.blog-title{
+  color: black;
+  font-size: 22px;
+  letter-spacing: 2px;
+  transition: .8s;
+}
+
+.blog-title a .hover{
+     transition: 0.8s;
+     color: red;
+ }
+
+.blog-category{
+  color: $menu-grey;
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.image-holder{
+  height: 335px;
+  background-size: cover;
+  background-position: center;
+}
+
+.blog-hr{
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.homepage-contact-us{
+  text-align: center;
+}
+
+.homepage-contact-us-text{
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  word-spacing: 2px;
+  color: black;
+  margin-bottom: 50px;
+}
+
+.red-button{
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: red;
+  border-radius: 0;
 }
