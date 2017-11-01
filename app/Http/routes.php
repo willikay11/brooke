@@ -15,6 +15,9 @@
      return view('frontend.homepage.index');
  });
 
+ Route::get('/about-us', function (){
+     return view('frontend.about.index');
+ });
 /*
 |--------------------------------------------------------------------------
 | Application Routes

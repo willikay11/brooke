@@ -1,4 +1,8 @@
 .footer{
-  height: 400px;
-  background-color: #1d75b3;
+  height: 100px;
+  background-color: $footer-black;
+}
+
+.footer-center{
+  top: 50%;
 }

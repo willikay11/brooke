@@ -135,8 +135,117 @@
 }
 
 .footer {
-  height: 200px;
-  background-color: #1d75b3;
+  height: 100px;
+  background-color: #212121;
+}
+
+.footer-center {
+  top: 50%;
+}
+
+.about-page-banner {
+  height: 400px;
+  background-color: rgba(255, 2, 0, 0.54);
+}
+
+.about-page-banner-text-container {
+  width: 40%;
+}
+
+.about-page-banner-text {
+  color: white;
+  font-weight: 800;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.about-page-who-are-we {
+  padding-top: 80px;
+  padding-bottom: 70px;
+  background-color: white;
+  min-height: 640px;
+}
+
+.about-page-who-are-we p {
+  color: black;
+}
+
+.about-page-who-are-we-header {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: .5px;
+}
+
+.about-page-who-are-we-text {
+  word-spacing: 2px;
+  letter-spacing: .5px;
+  line-height: 20px;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.about-page-image-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 250px;
+}
+
+.about-page-image {
+  background-image: url("../../img/facebook-geek-avatar.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.about-page-image-text-holder {
+  margin-top: 20px;
+}
+
+.about-page-image-name {
+  font-weight: 600;
+}
+
+.about-page-image-title {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.about-page-press-container {
+  background-color: #ec1f24;
+  min-height: 400px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.press-header {
+  font-size: 45px;
+  font-weight: 800;
+  width: 40%;
+}
+
+.press-text-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.press-text {
+  word-spacing: 2px;
+  letter-spacing: .5px;
+  line-height: 19px;
+  font-weight: 300;
+}
+
+.vertical_center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.footer-top {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=brooke.css.map */
