@@ -8,6 +8,12 @@
   color: #9f9f9f !important;
 }
 
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  background-color: white;
+  border-bottom: 1px solid #ec1f24;
+}
+
 .header-text-black {
   display: block;
   line-height: 100vh;
@@ -53,62 +59,6 @@
   color: white;
 }
 
-.blogs-container {
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
-
-.blogs-container .blogs-header {
-  display: block;
-  color: black;
-  text-align: center;
-}
-
-.blogs-container .blogs-subheader {
-  display: block;
-  color: #9f9f9f;
-  text-align: center;
-  word-spacing: 5px;
-  letter-spacing: 4px;
-  margin-top: 15px;
-  font-size: 20px;
-}
-
-.section-image {
-  height: 400px;
-  width: 500px;
-}
-
-.blog-title {
-  color: black;
-  font-size: 22px;
-  letter-spacing: 2px;
-  transition: .8s;
-}
-
-.blog-title a .hover {
-  transition: 0.8s;
-  color: red;
-}
-
-.blog-category {
-  color: #9f9f9f;
-  font-size: 18px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.image-holder {
-  height: 335px;
-  background-size: cover;
-  background-position: center;
-}
-
-.blog-hr {
-  margin-top: 4em;
-  margin-bottom: 4em;
-}
-
 .homepage-contact-us {
   text-align: center;
 }
@@ -131,6 +81,18 @@
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: red;
+  border-radius: 0;
+}
+
+.black-button {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #212121;
   border-radius: 0;
 }
 
@@ -246,6 +208,73 @@
 .footer-top {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.blog-page-container {
+  margin-top: 120px !important;
+}
+
+.blogs-container {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.blogs-container .blogs-header {
+  display: block;
+  color: black;
+  text-align: center;
+}
+
+.blogs-container .blogs-subheader {
+  display: block;
+  color: #9f9f9f;
+  text-align: center;
+  word-spacing: 5px;
+  letter-spacing: 4px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.section-image {
+  height: 400px;
+  width: 500px;
+}
+
+.blog-title {
+  color: black;
+  font-size: 20px;
+  letter-spacing: 1px;
+  transition: .8s;
+  font-weight: 500;
+  word-spacing: 2px;
+}
+
+.blog-title:hover {
+  transition: 0.8s;
+  color: red;
+  text-decoration: none;
+}
+
+.blog-category {
+  color: #9f9f9f;
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.blog-info-container {
+  margin-bottom: 30px;
+}
+
+.image-holder {
+  height: 335px;
+  background-size: cover;
+  background-position: center;
+}
+
+.blog-hr {
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
 /*# sourceMappingURL=brooke.css.map */

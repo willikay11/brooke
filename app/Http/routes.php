@@ -18,6 +18,10 @@
  Route::get('/about-us', function (){
      return view('frontend.about.index');
  });
+
+ Route::get('/blogs', function (){
+     return view('frontend.blog.index');
+ });
 /*
 |--------------------------------------------------------------------------
 | Application Routes
