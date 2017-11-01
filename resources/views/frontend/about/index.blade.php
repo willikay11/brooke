@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="container-fluid">
-        <div class="row">
+        <div class="row about-page-banner">
             <div class="col-lg-offset-1 col-lg-11 col-md-offset-1 col-md-1 col-sm-12 vertical_center about-page-banner-text-container">
                 <p class="about-page-banner-text">Life inside the brooke consult</p>
             </div>
