@@ -25,9 +25,12 @@
 
     @include('frontend.layouts.partials.menu')
 
-    @yield('content')
+    <div style="padding-top: 90px">
+        @yield('content')
 
-    @include('frontend.layouts.partials.footer')
+        @include('frontend.layouts.partials.footer')
+    </div>
+
 
 <script src="/js/parallax/jquery-2.1.4.js"></script>
 <script src="/js/parallax/velocity.min.js"></script>

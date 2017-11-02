@@ -80,3 +80,126 @@
   background-color: $footer-black;
   border-radius: 0;
 }
+
+//New landing page
+.homepage-slider{
+  height: 800px;
+  background-color: #00aaaa;
+}
+
+.slider-content{
+  width: 20%;
+}
+
+.slider-content-header{
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.slider-content-text{
+  font-size: 54px;
+  font-weight: 200;
+  line-height: 1.2;
+  margin-bottom: 10px;
+
+  span{
+    color: red;
+  }
+}
+
+.slider-content-link{
+  color: #646363;
+  text-decoration: none !important;
+  transition: .8s;
+  &:hover{
+    color: white;
+    transition: .8s;
+  }
+}
+
+.homepage-quadrant{
+  margin: 20px;
+  height: 900px;
+}
+
+.homepage-quarter{
+  height: 450px;
+  &:hover{
+    transition: .8s;
+    background-color: rgba(0,0,0,.67) !important;
+    .homepage-quarter-content{
+      transition: .8s;
+      top: 40%;
+    }
+  }
+  .homepage-quarter-content{
+    top: 110%;
+    position: absolute;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: .8s;
+    .homepage-quarter-content-header{
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .homepage-quarter-content-text{
+      font-size: 18px;
+      font-weight: 300;
+      word-spacing: .5px;
+      letter-spacing: 0.5px;
+      line-height: 1.4;
+    }
+
+    .homepage-quarter-content-link{
+      text-decoration: none !important;
+      transition: .8s;
+      color: white;
+      &:hover{
+        transition: .8s;
+      }
+    }
+  }
+}
+
+.section-left{
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.section-right{
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.homepage-join{
+  height: 500px;
+  background-color: #00a8c6;
+}
+
+.homepage-join-content{
+  width: 30%;
+  .homepage-join-content-header{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .homepage-join-content-text{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .homepage-join-content-link{
+    text-decoration: none !important;
+    transition: .8s;
+    color: white;
+    &:hover{
+      transition: .8s;
+    }
+  }
+}

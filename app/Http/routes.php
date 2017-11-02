@@ -12,7 +12,7 @@
 */
 
  Route::get('/', function () {
-     return view('frontend.homepage.index');
+     return view('frontend.homepage.index-2');
  });
 
  Route::get('/about-us', function (){
