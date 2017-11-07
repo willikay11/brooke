@@ -19,13 +19,9 @@
      return view('frontend.about.index');
  });
 
- Route::get('/blogs', function (){
-     return view('frontend.blog.index');
- });
+ Route::get('/blogs', 'BlogController@index');
 
- Route::get('/blog/article', function (){
-     return view('frontend.blog.article');
- });
+ Route::get('/blog/article/{slug}', 'BlogController@article');
 /*
 |--------------------------------------------------------------------------
 | Application Routes

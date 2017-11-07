@@ -13,50 +13,52 @@
             </div>
             <div class="row">
                 <div class="col-lg-offset-1 col-lg-10 col-sm-12">
-                    <div class="col-lg-4 blog-info-container">
-                        <a href="#">
-                            <div class="image-holder" style="background-image: url('/img/cover.jpg')"></div>
-                        </a>
-                        <p class="blog-category">Real Estate</p>
-                        <a href="#" class="blog-title">Preserving the cultural heritage with sustainable heritage</a>
-                    </div>
-                    <div class="col-lg-4 blog-info-container">
-                        <a href="#">
-                            <div class="image-holder" style="background-image: url('/img/card-3.jpg')"></div>
-                        </a>
-                        <p class="blog-category">Real Estate</p>
-                        <a href="#" class="blog-title">Preserving the cultural heritage with sustainable
-                            heritage</a>
-                    </div>
-                    <div class="col-lg-4 blog-info-container">
-                        <a href="#">
-                            <div class="image-holder" style="background-image: url('/img/card-4.jpg')"></div>
-                        </a>
-                        <p class="blog-category">Real Estate</p>
-                        <a href="#" class="blog-title">Preserving the cultural heritage with sustainable heritage</a>
-                    </div>
-                    <div class="col-lg-4 blog-info-container">
-                        <a href="#">
-                            <div class="image-holder" style="background-image: url('/img/card-2.jpg')"></div>
-                        </a>
-                        <p class="blog-category">Real Estate</p>
-                        <a href="#" class="blog-title">Preserving the cultural heritage with sustainable heritage</a>
-                    </div>
-                    <div class="col-lg-4 blog-info-container">
-                        <a href="#">
-                            <div class="image-holder" style="background-image: url('/img/card-1.png')"></div>
-                        </a>
-                        <p class="blog-category">Real Estate</p>
-                        <a href="#" class="blog-title">Preserving the cultural heritage with sustainable
-                            heritage</a>
-                    </div>
-                    <div class="col-lg-4 blog-info-container">
-                        <a href="#">
-                            <div class="image-holder" style="background-image: url('/img/cover.jpg')"></div>
-                        </a>
-                        <p class="blog-category">Real Estate</p>
-                        <a href="#" class="blog-title">Preserving the cultural heritage with sustainable heritage</a>
-                    </div>
+                    @foreach($blogs as $blog)
+                        <div class="col-lg-4 blog-info-container">
+                            <a href="/blog/article/{{ $blog['slug'] }}">
+                                <div class="image-holder" style="background-image: url({!! $blog['image'] !!})"></div>
+                            </a>
+                            <p class="blog-category">Real Estate</p>
+                            <a href="/blog/article/{{ $blog['slug'] }}" class="blog-title">{!! $blog['title'] !!}</a>
+                        </div>
+                    @endforeach
+                    {{--<div class="col-lg-4 blog-info-container">--}}
+                        {{--<a href="#">--}}
+                            {{--<div class="image-holder" style="background-image: url('/img/card-3.jpg')"></div>--}}
+                        {{--</a>--}}
+                        {{--<p class="blog-category">Real Estate</p>--}}
+                        {{--<a href="#" class="blog-title">Preserving the cultural heritage with sustainable--}}
+                            {{--heritage</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="col-lg-4 blog-info-container">--}}
+                        {{--<a href="#">--}}
+                            {{--<div class="image-holder" style="background-image: url('/img/card-4.jpg')"></div>--}}
+                        {{--</a>--}}
+                        {{--<p class="blog-category">Real Estate</p>--}}
+                        {{--<a href="#" class="blog-title">Preserving the cultural heritage with sustainable heritage</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="col-lg-4 blog-info-container">--}}
+                        {{--<a href="#">--}}
+                            {{--<div class="image-holder" style="background-image: url('/img/card-2.jpg')"></div>--}}
+                        {{--</a>--}}
+                        {{--<p class="blog-category">Real Estate</p>--}}
+                        {{--<a href="#" class="blog-title">Preserving the cultural heritage with sustainable heritage</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="col-lg-4 blog-info-container">--}}
+                        {{--<a href="#">--}}
+                            {{--<div class="image-holder" style="background-image: url('/img/card-1.png')"></div>--}}
+                        {{--</a>--}}
+                        {{--<p class="blog-category">Real Estate</p>--}}
+                        {{--<a href="#" class="blog-title">Preserving the cultural heritage with sustainable--}}
+                            {{--heritage</a>--}}
+                    {{--</div>--}}
+                    {{--<div class="col-lg-4 blog-info-container">--}}
+                        {{--<a href="#">--}}
+                            {{--<div class="image-holder" style="background-image: url('/img/cover.jpg')"></div>--}}
+                        {{--</a>--}}
+                        {{--<p class="blog-category">Real Estate</p>--}}
+                        {{--<a href="#" class="blog-title">Preserving the cultural heritage with sustainable heritage</a>--}}
+                    {{--</div>--}}
                     <div class="clearfix"></div>
                 </div>
 

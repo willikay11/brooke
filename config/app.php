@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'env' => env('APP_ENV', 'production'),
+    'env' => env('APP_ENV', 'local'),
 
     /*
     |--------------------------------------------------------------------------
@@ -181,6 +181,7 @@ return [
         /*
          * TypiCMS Core Service Provider...
          */
+        TypiCMS\Modules\Blogs\Providers\ModuleProvider::class,
         TypiCMS\Modules\Core\Providers\ModuleProvider::class,
     ],
 

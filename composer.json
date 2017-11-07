@@ -54,7 +54,8 @@
         ],
         "psr-4": {
             "App\\": "app/",
-            "TypiCMS\\Modules\\": "Modules/"
+            "TypiCMS\\Modules\\": "Modules/",
+            "brooke\\": "app/brooke"
         },
         "files": [
             "app/helpers.php"
