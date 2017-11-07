@@ -84,7 +84,10 @@
 //New landing page
 .homepage-slider{
   height: 800px;
-  background-color: #00aaaa;
+  //background-color: #00aaaa;
+  background-image: url('/img/cover.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .slider-content{
@@ -125,14 +128,22 @@
 
 .homepage-quarter{
   height: 450px;
+  background-position: center;
+  background-size: cover;
   &:hover{
-    transition: .8s;
-    background-color: rgba(0,0,0,.67) !important;
+    .homepage-container{
+      transition: .8s;
+      background-color: rgba(0,0,0,.67) !important;
+    }
     .homepage-quarter-content{
       transition: .8s;
       top: 40%;
     }
   }
+  .homepage-container{
+    height: inherit;
+  }
+
   .homepage-quarter-content{
     top: 110%;
     position: absolute;
@@ -176,7 +187,9 @@
 
 .homepage-join{
   height: 500px;
-  background-color: #00a8c6;
+  //background-color: #00a8c6;
+  background-position: center;
+  background-size: cover;
 }
 
 .homepage-join-content{

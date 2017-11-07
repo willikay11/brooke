@@ -8,8 +8,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">
-                <img src="/img/logobrooke.svg" alt="">
+            <a class="navbar-brand" href="#" style="padding: 0px">
+                <img style="height: 50px" src="/img/logo.svg" alt="">
             </a>
         </div>
         <div class="navbar-collapse collapse">

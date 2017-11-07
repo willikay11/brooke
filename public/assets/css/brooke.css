@@ -98,7 +98,9 @@
 
 .homepage-slider {
   height: 800px;
-  background-color: #00aaaa;
+  background-image: url("/img/cover.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .slider-content {
@@ -140,9 +142,11 @@
 
 .homepage-quarter {
   height: 450px;
+  background-position: center;
+  background-size: cover;
 }
 
-.homepage-quarter:hover {
+.homepage-quarter:hover .homepage-container {
   transition: .8s;
   background-color: rgba(0, 0, 0, 0.67) !important;
 }
@@ -150,6 +154,10 @@
 .homepage-quarter:hover .homepage-quarter-content {
   transition: .8s;
   top: 40%;
+}
+
+.homepage-quarter .homepage-container {
+  height: inherit;
 }
 
 .homepage-quarter .homepage-quarter-content {
@@ -196,7 +204,8 @@
 
 .homepage-join {
   height: 500px;
-  background-color: #00a8c6;
+  background-position: center;
+  background-size: cover;
 }
 
 .homepage-join-content {
@@ -237,7 +246,9 @@
 
 .about-page-banner {
   height: 400px;
-  background-color: rgba(255, 2, 0, 0.54);
+  background-image: url("/img/page-slider.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .about-page-banner-text-container {

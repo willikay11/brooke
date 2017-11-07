@@ -1,6 +1,9 @@
 .about-page-banner{
   height: 400px;
-  background-color: rgba(255, 2, 0, 0.54);
+  //background-color: rgba(255, 2, 0, 0.54);
+  background-image: url("/img/page-slider.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .about-page-banner-text-container{
