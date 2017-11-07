@@ -22,6 +22,10 @@
  Route::get('/blogs', function (){
      return view('frontend.blog.index');
  });
+
+ Route::get('/blog/article', function (){
+     return view('frontend.blog.article');
+ });
 /*
 |--------------------------------------------------------------------------
 | Application Routes

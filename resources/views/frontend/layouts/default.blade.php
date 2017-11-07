@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-    <link href="assets/css/brooke.css" rel="stylesheet">
+    <link href="/assets/css/brooke.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/reset.css"> <!-- CSS reset -->
-    <link rel="stylesheet" href="assets/css/style.css"> <!-- Resource style -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="/assets/css/style.css"> <!-- Resource style -->
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
