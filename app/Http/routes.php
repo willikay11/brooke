@@ -17,6 +17,8 @@
      return view('frontend.about.index');
  });
 
+ Route::get('/api/blogs/limit/{limit}', 'BlogController@getBlogs');
+
  Route::get('/blogs', 'BlogController@index');
 
  Route::get('/blog/article/{slug}', 'BlogController@article');

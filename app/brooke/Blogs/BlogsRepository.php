@@ -10,9 +10,12 @@
 namespace brooke\Blogs;
 
 use TypiCMS\Modules\Blogs\Models\BlogTranslation;
+use brooke\API\SortFilterPaginate;
 
 class BlogsRepository
 {
+
+    use SortFilterPaginate;
 
     public function getAllActiveBlogs($number = null)
     {
@@ -44,5 +47,25 @@ class BlogsRepository
             'summary' => $article->summary,
             'body' => $article->body
         ];
+    }
+
+    public function getAllActiveBlogsApi($limit)
+    {
+        $filter = [
+            'column' => 'status',
+            'sign' => '=',
+            'value' => '1'
+        ];
+
+        return $this->sortFilterPaginate(new BlogTranslation(), [$filter], function ($blog)
+        {
+            return[
+                'image' => '/uploads/blogs/' . $blog->owner->image,
+                'title' => $blog->title,
+                'slug' => $blog->slug,
+                'summary' => $blog->summary,
+                'body' => $blog->body
+            ];
+        },null, $limit);
     }
 }

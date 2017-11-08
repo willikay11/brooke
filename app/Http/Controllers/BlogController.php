@@ -25,6 +25,11 @@ class BlogController extends Controller
         $this->blogsRepository = $blogsRepository;
     }
 
+    public function getBlogs($limit)
+    {
+        return $this->blogsRepository->getAllActiveBlogsApi($limit);
+    }
+
     public function index()
     {
         $blogs = $this->blogsRepository->getAllActiveBlogs();

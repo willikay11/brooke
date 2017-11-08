@@ -11,34 +11,45 @@
                     <span class="blogs-subheader">New at consulting press</span>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-offset-1 col-lg-10 col-sm-12">
-                    @foreach($blogs as $blog)
-                        <div class="col-lg-4 blog-info-container">
-                            <a href="/blog/article/{{ $blog['slug'] }}">
-                                <div class="image-holder" style="background-image: url({!! $blog['image'] !!})"></div>
+            <blogs inline-template>
+                <div class="row">
+                    <div class="col-lg-offset-1 col-lg-10 col-sm-12">
+                        <div class="col-lg-4 blog-info-container" v-for="row in rowCollection" :key="row.id">
+                            <a :href="'/blog/article/'+row.slug">
+                                <div class="image-holder"
+                                     :style="{ 'background-image': 'url(' + row.image + ')' }"></div>
                             </a>
                             <p class="blog-category">Real Estate</p>
-                            <a href="/blog/article/{{ $blog['slug'] }}" class="blog-title">{!! $blog['title'] !!}</a>
+                            <a :href="'/blog/article/'+row.slug" class="blog-title">@{{ row.title }}</a>
                         </div>
-                    @endforeach
-                    <div class="clearfix"></div>
-                </div>
-
-                <div class="col-lg-offset-1 col-lg-10">
-                    <div class="homepage-contact-us">
-                        <button class="btn black-button">Load More</button>
+                        {{--@foreach($blogs as $blog)--}}
+                        {{--<div class="col-lg-4 blog-info-container">--}}
+                        {{--<a href="/blog/article/{{ $blog['slug'] }}">--}}
+                        {{--<div class="image-holder" style="background-image: url({!! $blog['image'] !!})"></div>--}}
+                        {{--</a>--}}
+                        {{--<p class="blog-category">Real Estate</p>--}}
+                        {{--<a href="/blog/article/{{ $blog['slug'] }}" class="blog-title">{!! $blog['title'] !!}</a>--}}
+                        {{--</div>--}}
+                        {{--@endforeach--}}
+                        <div class="clearfix"></div>
                     </div>
-                </div>
 
-                <div class="row">
                     <div class="col-lg-offset-1 col-lg-10">
-                        <hr class="blog-hr">
+                        <div class="homepage-contact-us">
+                            <button v-on:click="loadMore()" class="btn black-button">Load More</button>
+                        </div>
                     </div>
-                </div>
 
+            </blogs>
+
+            <div class="row">
+                <div class="col-lg-offset-1 col-lg-10">
+                    <hr class="blog-hr">
+                </div>
             </div>
+
         </div>
+    </div>
     </div>
 
     <div class="row homepage-join" style="background-image: url('/img/cover.jpg');">
