@@ -21,8 +21,9 @@
 </head>
 
 <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
-<body data-hijacking="off" data-animation="parallax">
+<body>
 
+<div id="app">
     @include('frontend.layouts.partials.menu')
 
     <div style="padding-top: 90px">
@@ -30,8 +31,10 @@
 
         @include('frontend.layouts.partials.footer')
     </div>
+</div>
 
 
+<script src="/assets/js/app.js"></script>
 <script src="/js/parallax/jquery-2.1.4.js"></script>
 <script src="/js/parallax/velocity.min.js"></script>
 <script src="/js/parallax/velocity.ui.min.js"></script>

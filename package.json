@@ -31,9 +31,12 @@
     "vinyl-paths": "^2.1.0"
   },
   "dependencies": {
+    "axios": "^0.17.0",
     "bourbon": "^4.3.4",
     "laravel-elixir": "^6.0.0-16",
     "laravel-elixir-vue-2": "^0.3.0",
-    "laravel-elixir-webpack-official": "^1.0.10"
+    "laravel-elixir-webpack-official": "^1.0.10",
+    "vue": "^2.5.3",
+    "vue-axios": "^2.0.2"
   }
 }
