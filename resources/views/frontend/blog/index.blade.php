@@ -22,43 +22,6 @@
                             <a href="/blog/article/{{ $blog['slug'] }}" class="blog-title">{!! $blog['title'] !!}</a>
                         </div>
                     @endforeach
-                    {{--<div class="col-lg-4 blog-info-container">--}}
-                        {{--<a href="#">--}}
-                            {{--<div class="image-holder" style="background-image: url('/img/card-3.jpg')"></div>--}}
-                        {{--</a>--}}
-                        {{--<p class="blog-category">Real Estate</p>--}}
-                        {{--<a href="#" class="blog-title">Preserving the cultural heritage with sustainable--}}
-                            {{--heritage</a>--}}
-                    {{--</div>--}}
-                    {{--<div class="col-lg-4 blog-info-container">--}}
-                        {{--<a href="#">--}}
-                            {{--<div class="image-holder" style="background-image: url('/img/card-4.jpg')"></div>--}}
-                        {{--</a>--}}
-                        {{--<p class="blog-category">Real Estate</p>--}}
-                        {{--<a href="#" class="blog-title">Preserving the cultural heritage with sustainable heritage</a>--}}
-                    {{--</div>--}}
-                    {{--<div class="col-lg-4 blog-info-container">--}}
-                        {{--<a href="#">--}}
-                            {{--<div class="image-holder" style="background-image: url('/img/card-2.jpg')"></div>--}}
-                        {{--</a>--}}
-                        {{--<p class="blog-category">Real Estate</p>--}}
-                        {{--<a href="#" class="blog-title">Preserving the cultural heritage with sustainable heritage</a>--}}
-                    {{--</div>--}}
-                    {{--<div class="col-lg-4 blog-info-container">--}}
-                        {{--<a href="#">--}}
-                            {{--<div class="image-holder" style="background-image: url('/img/card-1.png')"></div>--}}
-                        {{--</a>--}}
-                        {{--<p class="blog-category">Real Estate</p>--}}
-                        {{--<a href="#" class="blog-title">Preserving the cultural heritage with sustainable--}}
-                            {{--heritage</a>--}}
-                    {{--</div>--}}
-                    {{--<div class="col-lg-4 blog-info-container">--}}
-                        {{--<a href="#">--}}
-                            {{--<div class="image-holder" style="background-image: url('/img/cover.jpg')"></div>--}}
-                        {{--</a>--}}
-                        {{--<p class="blog-category">Real Estate</p>--}}
-                        {{--<a href="#" class="blog-title">Preserving the cultural heritage with sustainable heritage</a>--}}
-                    {{--</div>--}}
                     <div class="clearfix"></div>
                 </div>
 
@@ -78,5 +41,13 @@
         </div>
     </div>
 
-    @include('frontend.layouts.partials.footer-top')
+    <div class="row homepage-join" style="background-image: url('/img/cover.jpg');">
+        <div class="col-sm-12 col-md-offset-2 col-md-10 col-lg-offset-2 col-lg-10 vertical_center">
+            <div class="homepage-join-content">
+                <p class="homepage-join-content-header">Join us today.</p>
+                <p class="homepage-join-content-text">Are you ready to get some more from your tourism business</p>
+                <a class="homepage-join-content-link" href="#">Speak to an advisor</a>
+            </div>
+        </div>
+    </div>
 @stop

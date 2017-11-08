@@ -11,9 +11,7 @@
 |
 */
 
- Route::get('/', function () {
-     return view('frontend.homepage.index-2');
- });
+ Route::get('/', 'HomeController@index');
 
  Route::get('/about-us', function (){
      return view('frontend.about.index');

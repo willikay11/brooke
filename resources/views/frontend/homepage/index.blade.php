@@ -61,23 +61,25 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-offset-1 col-lg-10 col-sm-12">
-                        <div class="col-lg-4">
-                            <div class="image-holder" style="background-image: url('../../img/img-5.jpg')"></div>
-                            <p class="blog-category">Real Estate</p>
-                            <a href="#" class="blog-title">Preserving the cultural heritage with sustainable heritage</a>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="col-lg-12">
-                                <div class="image-holder" style="background-image: url('../../img/img-5.jpg')"></div>
+                        @foreach($blogs as $blog)
+                            <div class="col-lg-4">
+                                <div class="image-holder" style="background-image: url({{ $blog['image'] }})"></div>
                                 <p class="blog-category">Real Estate</p>
-                                <a href="#" class="blog-title">Preserving the cultural heritage with sustainable heritage</a>
+                                <a href="#" class="blog-title">{!! $blog['title'] !!}</a>
                             </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="image-holder" style="background-image: url('../../img/img-5.jpg')"></div>
-                            <p class="blog-category">Real Estate</p>
-                            <a href="#" class="blog-title">Preserving the cultural heritage with sustainable heritage</a>
-                        </div>
+                        @endforeach
+                        {{--<div class="col-lg-4">--}}
+                            {{--<div class="col-lg-12">--}}
+                                {{--<div class="image-holder" style="background-image: url('../../img/img-5.jpg')"></div>--}}
+                                {{--<p class="blog-category">Real Estate</p>--}}
+                                {{--<a href="#" class="blog-title">Preserving the cultural heritage with sustainable heritage</a>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-lg-4">--}}
+                            {{--<div class="image-holder" style="background-image: url('../../img/img-5.jpg')"></div>--}}
+                            {{--<p class="blog-category">Real Estate</p>--}}
+                            {{--<a href="#" class="blog-title">Preserving the cultural heritage with sustainable heritage</a>--}}
+                        {{--</div>--}}
                         <div class="clearfix"></div>
                     </div>
                 </div>
