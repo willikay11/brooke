@@ -22,6 +22,13 @@
  Route::get('/blogs', 'BlogController@index');
 
  Route::get('/blog/article/{slug}', 'BlogController@article');
+
+ Route::get('/contact-us', 'ContactController@index');
+
+ Route::post('/contact/store', [
+     'as' => 'contact.store',
+     'uses' => 'ContactController@store'
+ ]);
 /*
 |--------------------------------------------------------------------------
 | Application Routes

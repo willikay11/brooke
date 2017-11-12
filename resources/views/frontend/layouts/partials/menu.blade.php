@@ -18,7 +18,7 @@
                 <li><a href="#">Case Study</a></li>
                 <li><a href="/about-us">About</a></li>
                 <li><a href="/blogs">Blogs</a></li>
-                <li><a href="#">Get In Touch</a></li>
+                <li><a href="/contact-us">Get In Touch</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
