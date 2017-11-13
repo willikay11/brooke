@@ -28,5 +28,6 @@ trait ContactRules
         ];
 
         return $this->verdict($request, $rules);
+
     }
 }
