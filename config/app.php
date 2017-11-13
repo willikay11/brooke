@@ -242,7 +242,7 @@ return [
         'Notification' => Krucas\Notification\Facades\Notification::class,
         'Translatable' => Dimsav\Translatable\Translatable::class,
         'TranslatableBootForm' => Propaganistas\LaravelTranslatableBootForms\Facades\TranslatableBootForm::class,
-        'Form' => Collective\Html\FormFacade::class,
+        'Forms' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Countries' => Webpatser\Countries\CountriesFacade::class,
 

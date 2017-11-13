@@ -14,49 +14,49 @@
 
         <div class="row">
             @include('frontend.layouts.partials.flash')
-            {!! Form::open(['route' => 'contact.store']) !!}
+            {!! Forms::open(['route' => 'contact.store']) !!}
             <div class="col-lg-offset-3 col-lg-6 contact-container">
                 <div class="col-sm-12 col-md-6 col-lg-6 form-group">
                     <label class="contact-input-label" for="firstname">First Name</label>
-                    {!! Form::text('firstname', null, ["class" => "form-control" ]) !!}
+                    {!! Forms::text('firstname', null, ["class" => "form-control" ]) !!}
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 form-group">
                     <label class="contact-input-label" for="firstname">Last Name</label>
-                    {!! Form::text('lastname', null, ["class" => "form-control"]) !!}
+                    {!! Forms::text('lastname', null, ["class" => "form-control"]) !!}
                 </div>
 
                 <div class="col-sm-12 col-md-12 col-lg-12 form-group">
                     <label class="contact-input-label" for="firstname">Email</label>
-                    {!! Form::email('email', null, ["class" => "form-control", 'placeholder' => 'email@example.com']) !!}
+                    {!! Forms::email('email', null, ["class" => "form-control", 'placeholder' => 'email@example.com']) !!}
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-6 form-group">
                     <label class="contact-input-label" for="firstname">Phone Number</label>
-                    {!! Form::text('phone', null, ["class" => "form-control", 'placeholder' => '0708977444']) !!}
+                    {!! Forms::text('phone', null, ["class" => "form-control", 'placeholder' => '0708977444']) !!}
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-6 form-group">
                     <label class="contact-input-label" for="firstname">Location</label>
-                    {{--{!! Form::text('location', null, ["class" => "form-control"]) !!}--}}
-                    {!! Form::select('location', [$countries], null, ["class" => "form-control"]) !!}
+                    {{--{!! Forms::text('location', null, ["class" => "form-control"]) !!}--}}
+                    {!! Forms::select('location', [$countries], null, ["class" => "form-control"]) !!}
                 </div>
 
                 <div class="col-sm-12 col-md-12 col-lg-12 form-group">
                     <label class="contact-input-label" for="firstname">Inquiry</label>
-                    {!! Form::text('inquiry', null, ["class" => "form-control"]) !!}
+                    {!! Forms::text('inquiry', null, ["class" => "form-control"]) !!}
                 </div>
 
                 <div class="col-sm-12 col-md-12 col-lg-12 form-group">
                     <label class="contact-input-label" for="firstname">Message</label>
-                    {!! Form::textarea('message', null, ["class" => "form-control", 'rows' => '4']) !!}
+                    {!! Forms::textarea('message', null, ["class" => "form-control", 'rows' => '4']) !!}
                 </div>
 
                 <div class="col-sm-12 col-md-12 col-lg-12 form-group">
                     {{--<button class="btn contact-submit-button">SUBMIT</button>--}}
-                    {!! Form::submit('SUBMIT', ['class' => 'btn contact-submit-button']) !!}
+                    {!! Forms::submit('SUBMIT', ['class' => 'btn contact-submit-button']) !!}
                 </div>
             </div>
-            {!! Form::close() !!}
+            {!! Forms::close() !!}
         </div>
 
         <div class="row homepage-join" style="background-image: url('/img/cover.jpg');">
