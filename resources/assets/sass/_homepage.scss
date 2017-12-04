@@ -95,13 +95,13 @@
 }
 
 .slider-content-header{
-  font-size: 26px;
+  font-size: 15px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
 .slider-content-text{
-  font-size: 54px;
+  font-size: 45px;
   font-weight: 200;
   line-height: 1.2;
   margin-bottom: 10px;
@@ -112,9 +112,10 @@
 }
 
 .slider-content-link{
-  color: #646363;
+  color: #ffffff;
   text-decoration: none !important;
   transition: .8s;
+  letter-spacing: 0.5px;
   &:hover{
     color: white;
     transition: .8s;
@@ -167,7 +168,8 @@
     .homepage-quarter-content-link{
       text-decoration: none !important;
       transition: .8s;
-      color: white;
+      color: #70B4FF;
+      line-height: 60px;
       &:hover{
         transition: .8s;
       }
@@ -186,8 +188,7 @@
 }
 
 .homepage-join{
-  height: 500px;
-  //background-color: #00a8c6;
+  height: 350px;
   background-position: center;
   background-size: cover;
 }
